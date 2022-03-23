@@ -19,14 +19,21 @@ header {
     /* box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4); */
     
   }
+  header h1 {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 10px;
+    /* font-size: 10vw; */
+  }
+
   .image-aside {
 
     /* margin-left: 90px; */
     padding: 0px;
     clear: both;
     float: right;
-    width: 7%;
-    height: 7%;
+    width: 20%;
+    height: 20%;
     border-radius: 100px;
     
     
@@ -39,6 +46,20 @@ header {
     /*background-size: 5px;
     background-position: right;
     min-height: 5vh; */
+  }
+  .nav-and-avatar {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center
+
+  }
+  nav{
+    padding: 20px;
+    float:right;
+    
+
   }
 
   .hero-banner {
@@ -127,6 +148,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
   }
   .flex-item {
     border: 5px solid var(--secondary);
@@ -144,6 +166,7 @@ main {
     background-size: 150%;
     transition: all 0.5s;
     font-size: 0.9rem;
+    background-size: cover;
   }
 
   .project-section {
@@ -154,6 +177,7 @@ main {
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
+    width:100%
   }
   /* .project-section > h2 {
     flex: 0 0 20%;
@@ -172,24 +196,80 @@ main {
     margin-bottom: 20px;
   }
 
-  .run-buddy {
-    background-image: url("../images/02-run-buddy.jpg");
+  .cv-parse {
+    background-image: url("../images/parse.png");
   }
   
-  .led-wall {
-    background-image: url("../images/02-portfolio-1.jpg");
+  .scraper {
+    background-image: url("../images/planer.jpg");
   }
   
-  .react-calc {
-    background-image: url("../images/02-portfolio-2.jpg");
+  .meeting {
+    background-image: url("../images/meetings.png");
   }
   
-  .pastel-puzzles {
-    background-image: url("../images/02-portfolio-3.jpg");
+  .quinoa {
+    background-image: url("../images/big-to-small.jpg");
   }
 
   .conan {
-    background-image: url("../images/conan.jpg");
+    background-image: url("../images/conan2.jpg");
+    flex-basis: 100%;
+    min-height: 400px;
+  }
+
+
+  @media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+  
+    header nav {
+      justify-content: center;
+    }
+  
+    .page-section > h2,
+    .page-section > div {
+      flex: 0 0 100%;
+    }
+  
+    .page-section > h2 {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+  
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+  
+    .hero-banner {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
 

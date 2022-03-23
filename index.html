@@ -15,14 +15,15 @@
 <body>
     <header>
         <h1>Chris Aylen - Portfolio Site</h1>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#mywork">My Work</a>
-            <a href="#contact">Contact Me</a>
-        </nav>
+        <div class="nav-and-avatar">
+            <nav>
+                <a href="#about">About Me</a>
+                <a href="#work">My Work</a>
+                <a href="#contact">Contact Me</a>
+            </nav>
 
-        <img class="image-aside" src="./assets/images/stimpy.jpg" alt="Image of Chris Aylen's Avatar">
-
+            <img class="image-aside" src="./assets/images/stimpy.jpg" alt="Image of Chris Aylen's Avatar">
+        </div>
 
     </header>
 
@@ -36,7 +37,7 @@
 
     <main class="page-wrapper">
         <!-- About Me -->
-        <section>
+        <section id="about">
             <h2>About Me</h2>
             <div>
                 <p>
@@ -51,43 +52,51 @@
 
 
         <section class="project-section">
-            <h2>Work</h2>
+            <h2 id="work">Work</h2>
             <div class="flex-container">
                 <a href="#" class="flex-item conan">
                     <div>
-                        <h3>Surf Report</h3>
-                        <span>MERN Stack</span>
+                        <h3>Game Launcher</h3>
+                        <span>C# Win Forms</span>
                     </div>
                 </a>
 
-                <a href="#" class="flex-item led-wall">
+                <a href="#" class="flex-item scraper">
                     <div>
-                        <h3>LED Wall</h3>
-                        <span>Node/IoT</span>
+                        <h3>Job Scraper</h3>
+                        <span>DotNetCore/Web API</span>
                     </div>
                 </a>
-                <a href="#" class="flex-item react-calc">
+                <a href="#" class="flex-item meeting">
                     <div>
-                        <h3>Calculator</h3>
-                        <span>React/JavaScript/CSS</span>
+                        <h3>Meeting Manager</h3>
+                        <span>DotNet Framework/Classic ASP</span>
                     </div>
                 </a>
 
-                <a href="#" class="flex-item pastel-puzzles">
+                <a href="#" class="flex-item quinoa">
                     <div>
-                        <h3>Pastel Puzzels</h3>
-                        <span>MERN Stack</span>
+                        <h3>Quinoa</h3>
+                        <span>Xamarin</span>
                     </div>
                 </a>
 
 
-                <a href="#" class="flex-item run-buddy">
+                <a href="#" class="flex-item cv-parse">
                     <div>
-                        <h3>Run Buddy</h3>
-                        <span>HTML/CSS</span>
+                        <h3>CV Parser</h3>
+                        <span>DotNet Framework/WebAPI</span>
                     </div>
                 </a>
 
+            </div>
+        </section>
+        <section class="page-section contact" id="contact">
+            <h2>Contact Me</h2>
+            <div>
+                <address>
+                    <a href="https://www.linkedin.com/in/chris-aylen-agile-software-development/">LinkedIn</a>
+                </address>
             </div>
         </section>
 
