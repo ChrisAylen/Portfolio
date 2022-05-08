@@ -197,24 +197,25 @@ main {
     margin-bottom: 20px;
   }
 
-  .cv-parse {
-    background-image: url("../images/parse.png");
+  .project-1 {
+    background-image: url("../images/password-gen.PNG");
   }
   
-  .scraper {
-    background-image: url("../images/planer.jpg");
+  
+  .project-2 {
+    background-image: url("../images/interface.PNG");
   }
   
-  .meeting {
-    background-image: url("../images/meetings.png");
+  .project-3 {
+    background-image: url("../images/quiz.png")
   }
   
-  .quinoa {
-    background-image: url("../images/big-to-small.jpg");
+  .project-4 {
+    background-image: url("../images/day-planner.png");
   }
-
-  .conan {
-    background-image: url("../images/conan2.jpg");
+  
+  .hero-project {
+    background-image: url("../images/movie_trans_proj1.png");
     flex-basis: 100%;
     min-height: 400px;
     
